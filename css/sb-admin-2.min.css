@@ -11655,3 +11655,8 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
 	width: 100%
 }
+
+h4{
+	color: red;
+	padding-bottom: 20px;
+}
