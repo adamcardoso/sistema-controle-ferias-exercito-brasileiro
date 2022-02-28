@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Getter
-@Setter
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,15 +17,18 @@ public class PerfilMilitar implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    private Integer identidadeMilitar;
-    private String nomeDoMilitar;
-    private String postoMilitar;
-    private String graduacaoMilitar;
-    private String secao;
-    private String ramal;
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Getter private Integer id;
+
+    @Getter @Setter private String identidadeMilitar;
+    @Getter @Setter private String nomeDoMilitar;
+    @Getter @Setter private String postoMilitar;
+    @Getter @Setter private String graduacaoMilitar;
+    @Getter @Setter private String secao;
+    @Getter @Setter private String ramal;
 
     @OneToMany(mappedBy="militar", cascade=CascadeType.ALL)
-    private List<PerfilMilitarEndereco> enderecos = new ArrayList<>();
+    private List<Endereco> enderecos = new ArrayList<>();
 
     @ElementCollection
     @CollectionTable(name="TELEFONE")
