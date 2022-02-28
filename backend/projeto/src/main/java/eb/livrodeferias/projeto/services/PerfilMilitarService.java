@@ -44,22 +44,6 @@ public class PerfilMilitarService {
         return obj;
     }
 
-    /*public PerfilMilitar update(PerfilMilitar obj) {
-        PerfilMilitar newObj = find(obj.getId());
-        updateData(newObj, obj);
-        return repo.save(newObj);
-    }
-
-    public void delete(Integer id) {
-        find(id);
-        try {
-            repo.deleteById(id);
-        }
-        catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Não é possível excluir porque há pedidos relacionados");
-        }
-    }*/
-
     public List<PerfilMilitar> findAll() {
         return perfilMilitarRepository.findAll();
     }
