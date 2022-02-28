@@ -26,11 +26,11 @@ public class Endereco implements Serializable {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name="militar_id")
-    private PerfilMilitar perfilMilitar;
+    @JoinColumn(name = "militar_id")
+    @Getter @Setter private PerfilMilitar perfilMilitar;
 
 
     @ManyToOne
     @JoinColumn(name="cidade_id")
-    private Cidade cidade;
+    @Getter @Setter private Cidade cidade;
 }
