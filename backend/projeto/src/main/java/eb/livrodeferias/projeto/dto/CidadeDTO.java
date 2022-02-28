@@ -1,19 +1,19 @@
 package eb.livrodeferias.projeto.dto;
 
-import eb.livrodeferias.projeto.domain.Estado;
+import eb.livrodeferias.projeto.domain.Cidade;
 
 import java.io.Serializable;
 
-public class EstadoDTO implements Serializable {
+public class CidadeDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Integer id;
     private String nome;
 
-    public EstadoDTO() {
+    public CidadeDTO() {
     }
 
-    public EstadoDTO(Estado obj) {
+    public CidadeDTO(Cidade obj) {
         id = obj.getId();
         nome = obj.getNome();
     }
