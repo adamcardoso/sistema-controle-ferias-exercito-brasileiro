@@ -27,7 +27,7 @@ public class PerfilMilitar implements Serializable {
     @Getter @Setter private String telefone;
     @Getter @Setter private String ramal;
 
-    @OneToMany(mappedBy = "militar", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "perfilMilitar", cascade = CascadeType.ALL)
     @Getter @Setter private List<Endereco> enderecos = new ArrayList<>();
 
     @ElementCollection
