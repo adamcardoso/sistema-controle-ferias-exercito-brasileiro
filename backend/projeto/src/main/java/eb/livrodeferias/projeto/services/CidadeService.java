@@ -1,6 +1,6 @@
 package eb.livrodeferias.projeto.services;
 
-import eb.livrodeferias.projeto.domain.Cidade;
+import eb.livrodeferias.projeto.entities.Cidade;
 import eb.livrodeferias.projeto.repositories.CidadeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

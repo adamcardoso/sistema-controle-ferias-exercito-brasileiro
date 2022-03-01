@@ -1,4 +1,4 @@
-package eb.livrodeferias.projeto.domain;
+package eb.livrodeferias.projeto.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;

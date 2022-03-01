@@ -1,6 +1,6 @@
 package eb.livrodeferias.projeto.dto;
 
-import eb.livrodeferias.projeto.domain.Cidade;
+import eb.livrodeferias.projeto.entities.Cidade;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
-package eb.livrodeferias.projeto.domain;
+package eb.livrodeferias.projeto.entities;
 
-import eb.livrodeferias.projeto.domain.enums.PostoGraduacao;
+import eb.livrodeferias.projeto.entities.enums.PostoGraduacao;
 import lombok.*;
 
 import javax.persistence.*;

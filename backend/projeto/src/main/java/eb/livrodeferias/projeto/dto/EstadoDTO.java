@@ -1,6 +1,6 @@
 package eb.livrodeferias.projeto.dto;
 
-import eb.livrodeferias.projeto.domain.Estado;
+import eb.livrodeferias.projeto.entities.Estado;
 
 import java.io.Serializable;
 

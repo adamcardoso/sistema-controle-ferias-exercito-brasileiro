@@ -1,4 +1,4 @@
-package eb.livrodeferias.projeto.domain.enums;
+package eb.livrodeferias.projeto.entities.enums;
 
 public enum PostoGraduacao {
     SOLDADO(1, "SOLDADO"),

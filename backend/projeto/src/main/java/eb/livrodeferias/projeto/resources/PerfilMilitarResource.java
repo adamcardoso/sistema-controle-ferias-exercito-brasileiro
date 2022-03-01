@@ -1,6 +1,6 @@
 package eb.livrodeferias.projeto.resources;
 
-import eb.livrodeferias.projeto.domain.PerfilMilitar;
+import eb.livrodeferias.projeto.entities.PerfilMilitar;
 import eb.livrodeferias.projeto.dto.PerfilMilitarNewDTO;
 import eb.livrodeferias.projeto.services.PerfilMilitarService;
 import org.springframework.beans.factory.annotation.Autowired;

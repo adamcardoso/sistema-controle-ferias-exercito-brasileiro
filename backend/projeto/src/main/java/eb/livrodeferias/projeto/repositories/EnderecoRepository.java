@@ -1,6 +1,6 @@
 package eb.livrodeferias.projeto.repositories;
 
-import eb.livrodeferias.projeto.domain.Endereco;
+import eb.livrodeferias.projeto.entities.Endereco;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

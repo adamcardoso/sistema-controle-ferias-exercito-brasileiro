@@ -1,6 +1,6 @@
 package eb.livrodeferias.projeto.repositories;
 
-import eb.livrodeferias.projeto.domain.PerfilMilitar;
+import eb.livrodeferias.projeto.entities.PerfilMilitar;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

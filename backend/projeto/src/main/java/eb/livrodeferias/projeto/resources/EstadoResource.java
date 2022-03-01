@@ -1,7 +1,7 @@
 package eb.livrodeferias.projeto.resources;
 
-import eb.livrodeferias.projeto.domain.Cidade;
-import eb.livrodeferias.projeto.domain.Estado;
+import eb.livrodeferias.projeto.entities.Cidade;
+import eb.livrodeferias.projeto.entities.Estado;
 import eb.livrodeferias.projeto.dto.CidadeDTO;
 import eb.livrodeferias.projeto.dto.EstadoDTO;
 import eb.livrodeferias.projeto.services.CidadeService;

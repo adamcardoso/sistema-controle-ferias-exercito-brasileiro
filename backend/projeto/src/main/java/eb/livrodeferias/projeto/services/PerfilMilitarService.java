@@ -1,9 +1,9 @@
 package eb.livrodeferias.projeto.services;
 
-import eb.livrodeferias.projeto.domain.Cidade;
-import eb.livrodeferias.projeto.domain.Endereco;
-import eb.livrodeferias.projeto.domain.PerfilMilitar;
-import eb.livrodeferias.projeto.domain.enums.PostoGraduacao;
+import eb.livrodeferias.projeto.entities.Cidade;
+import eb.livrodeferias.projeto.entities.Endereco;
+import eb.livrodeferias.projeto.entities.PerfilMilitar;
+import eb.livrodeferias.projeto.entities.enums.PostoGraduacao;
 import eb.livrodeferias.projeto.dto.PerfilMilitarNewDTO;
 import eb.livrodeferias.projeto.repositories.EnderecoRepository;
 import eb.livrodeferias.projeto.repositories.PerfilMilitarRepository;
