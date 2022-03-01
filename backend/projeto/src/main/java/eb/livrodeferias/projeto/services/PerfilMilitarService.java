@@ -1,10 +1,10 @@
 package eb.livrodeferias.projeto.services;
 
+import eb.livrodeferias.projeto.dto.PerfilMilitarNewDTO;
 import eb.livrodeferias.projeto.entities.Cidade;
 import eb.livrodeferias.projeto.entities.Endereco;
 import eb.livrodeferias.projeto.entities.PerfilMilitar;
 import eb.livrodeferias.projeto.entities.enums.PostoGraduacao;
-import eb.livrodeferias.projeto.dto.PerfilMilitarNewDTO;
 import eb.livrodeferias.projeto.repositories.EnderecoRepository;
 import eb.livrodeferias.projeto.repositories.PerfilMilitarRepository;
 import eb.livrodeferias.projeto.services.exceptions.ObjectNotFoundException;
@@ -15,6 +15,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,6 +29,7 @@ public class PerfilMilitarService {
     @Autowired
     private EnderecoRepository enderecoRepository;
 
+    //procura por id
     public PerfilMilitar find(Integer id){
         Optional<PerfilMilitar> obj = perfilMilitarRepository.findById(id);
 
@@ -35,6 +38,7 @@ public class PerfilMilitarService {
         ));
     }
 
+    //insere novos perfis
     @Transactional
     public PerfilMilitar insert(PerfilMilitar obj) {
         obj.setId(null);
@@ -42,6 +46,15 @@ public class PerfilMilitarService {
         enderecoRepository.saveAll(obj.getEnderecos());
 
         return obj;
+    }
+
+    public List<PerfilMilitar> listIdentidade(PerfilMilitar obj){
+        if (obj.getIdentidadeMilitar() == null){
+            System.out.println("Militar não está cadastrado! Realize o cadastro do mesmo!");
+
+        }
+
+        return Arrays.asList(obj);
     }
 
     public List<PerfilMilitar> findAll() {
